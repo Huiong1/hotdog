@@ -49,7 +49,8 @@ class _ReviewDetailState extends State<ReviewDetail> {
         }
 
         if (data.containsKey('location') && data['location'] is List) {
-          location = data['location'].first; // location은 배열 형태이므로 첫 번째 항목을 가져옵니다
+          location =
+              data['location'].first; // location은 배열 형태이므로 첫 번째 항목을 가져옵니다
         } else {
           print('location 데이터를 찾을 수 없습니다');
         }
@@ -70,7 +71,6 @@ class _ReviewDetailState extends State<ReviewDetail> {
       print('상세 정보 가져오기 실패');
     }
   }
-
 
 
   Future<void> submitReview() async {
@@ -241,3 +241,4 @@ class _ReviewDetailState extends State<ReviewDetail> {
       ),
     );
   }
+}
