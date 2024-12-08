@@ -241,4 +241,3 @@ class _ReviewDetailState extends State<ReviewDetail> {
       ),
     );
   }
-}
